@@ -10,7 +10,6 @@
                 SELECT distinct 
                     Material.MaterialId, 
                     Material.Descricao as DescMaterial, 
-                    /* Material.CaminhoThumbnail as Thumb, */
                     CASE WHEN coalesce(Material.CaminhoMiniThumbnail, '') <> '' THEN Material.CaminhoMiniThumbnail ELSE Material.CaminhoThumbnail END as Thumb,
                     Marca.Descricao as DescMarca, 
                     Formato.Descricao as DescFormato, 
@@ -19,7 +18,6 @@
                     Superficie.Abreviacao as DescSup,
                     Superficie.Descricao as DescSuperficie,   
                     Tipo.Descricao as DescTipo,
-                    Tipo.CaminhoThumbnail as ThumbTipo,
                     Cor.Descricao as DescCor,
                     Material.FormatoId,
                     Material.MarcaId,
@@ -55,8 +53,6 @@
             while($row = $result->fetch_array(MYSQLI_ASSOC)) {
                 $myArray['Material'][] = $row;
             }
-
-            echo "too aqio";
 
             if (isset($myArray))
                 echo json_encode($myArray);

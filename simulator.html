@@ -1,99 +1,100 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=no">
-        <meta name="author" content="cria.io">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="css/simulator-mobile.css" rel="stylesheet">  
-        
-        <link rel="stylesheet" type="text/css" href="https://d3j9qmbv5hjp0y.cloudfront.net/CRIA/styles.css">
-        <link rel="manifest" href="manifest.json">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="author" content="cria.io">
 
-        <script src="https://d3j9qmbv5hjp0y.cloudfront.net/CRIA/playcanvas-stable.min.js"></script>
-            <script>
-                ASSET_PREFIX = "https://d3j9qmbv5hjp0y.cloudfront.net/CRIA/";
-                SCRIPT_PREFIX = "";
-                SCENE_PATH = "795303.json";
-                CONTEXT_OPTIONS = {
-                    'antialias': true,
-                    'alpha': true,
-                    'preserveDrawingBuffer': true,
-                    'preferWebGl2': true
-                };			
-                SCRIPTS = [ 20662013, 20611995, 20612052, 20662014, 20662015, 20662016, 20662018, 21624076, 21625080, 21625686, 20501886, 21626460, 21837673, 24199529, 20660180, 28165127, 28165676 ];
-                CONFIG_FILENAME = ASSET_PREFIX + "config.json";
-                INPUT_SETTINGS = {
-                    useKeyboard: true,
-                    useMouse: true,
-                    useGamepads: false,
-                    useTouch: true
-                };
-                pc.script.legacy = false;
-                PRELOAD_MODULES = [];
-            </script>	    
-    </head>
-    <body>
-        <script src="https://d3j9qmbv5hjp0y.cloudfront.net/CRIA/__start__.js"></script>
-        <script src="https://d3j9qmbv5hjp0y.cloudfront.net/CRIA/__loading__.js"></script>
-        <header>
-            
-            <div class="navbar">
-                <button><i class="fa fa-home fa-lg"></i></button>
-                <button><i class="fa fa-undo fa-lg"></i></button>
-                <button><i class="fa fa-window-maximize fa-lg"></i></button>            
-                <button><i class="fa fa-camera fa-lg"></i></button>
-                <button><i class="fa fa-shopping-cart fa-lg"></i></button>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/simulator-mobile.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://d3j9qmbv5hjp0y.cloudfront.net/CRIA/styles.css">
+    <link rel="manifest" href="manifest.json">
+
+    <script src="https://d3j9qmbv5hjp0y.cloudfront.net/CRIA/playcanvas-stable.min.js"></script>
+    <script>
+        ASSET_PREFIX = "https://d3j9qmbv5hjp0y.cloudfront.net/CRIA/";
+        SCRIPT_PREFIX = "";
+        SCENE_PATH = "795303.json";
+        CONTEXT_OPTIONS = {
+            'antialias': true,
+            'alpha': true,
+            'preserveDrawingBuffer': true,
+            'preferWebGl2': true
+        };
+        SCRIPTS = [20662013, 20611995, 20612052, 20662014, 20662015, 20662016, 20662018, 21624076, 21625080, 21625686, 20501886, 21626460, 21837673, 24199529, 20660180, 28165127, 28165676];
+        CONFIG_FILENAME = ASSET_PREFIX + "config.json";
+        INPUT_SETTINGS = {
+            useKeyboard: true,
+            useMouse: true,
+            useGamepads: false,
+            useTouch: true
+        };
+        pc.script.legacy = false;
+        PRELOAD_MODULES = [];
+    </script>
+</head>
+
+<body>
+    <script src="https://d3j9qmbv5hjp0y.cloudfront.net/CRIA/__start__.js"></script>
+    <script src="https://d3j9qmbv5hjp0y.cloudfront.net/CRIA/__loading__.js"></script>
+    <header>
+
+        <div class="navbar">
+            <button><i class="fa fa-home fa-lg"></i></button>
+            <button><i class="fa fa-undo fa-lg"></i></button>
+            <button><i class="fa fa-window-maximize fa-lg"></i></button>
+            <button><i class="fa fa-camera fa-lg"></i></button>
+            <button><i class="fa fa-shopping-cart fa-lg"></i></button>
+        </div>
+
+
+    </header>
+    <main>
+        <section class="menu">
+            <div class="navbar-menu">
+                <button>Estilos</button>
+                <button>Materiais</button>
+                <button>Cameras</button>
             </div>
-            
-            
-        </header>
-        <main>
-            <section class="menu">
-                <div class="navbar-menu">
-                    <button>Estilos</button>
-                    <button>Materiais</button>
-                    <button>Cameras</button>            
-                </div>
 
-                <div class="menu-items">
+            <div class="menu-items">
 
-                    <!-- Materials-->
-                    <div class="menu-Materials">
-                        <div class="search-material-group">	
-                            <div class="search-material-input-group">
-                                <i class="fa fa-search"></i>
-                                <input type="search" class="search-material-input" placeholder="Buscar materiais"> 
-                                <button class="btn-filter-material">
+                <!-- Materials-->
+                <div class="menu-Materials">
+                    <div class="search-material-group">
+                        <div class="search-material-input-group">
+                            <i class="fa fa-search"></i>
+                            <input type="search" class="search-material-input" placeholder="Buscar materiais">
+                            <button class="btn-filter-material">
                                     <i class="fa fa-filter"></i>
-                                </button>  
-                            </div>   
-                        </div>		                                          						
-                    
-                        <div class="Material-themes">
-
+                                </button>
                         </div>
+                    </div>
 
-                        <div class="Materials">
-
-                        </div>
+                    <div class="material-types">
 
                     </div>
-                </div>           
-            </section>
-        </main>
-        <footer>
-            <button class="show-menu"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></button>
-            <button class="close-menu"><i class="fa fa-times" aria-hidden="true" style="margin: auto 2px;"></i></button>
-        </footer>
-    </body>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="js/simulator.js"></script>
+                    <div class="materials">
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <button class="show-menu"><i class="fa fa-plus fa-lg" aria-hidden="true"></i></button>
+        <button class="close-menu"><i class="fa fa-times" aria-hidden="true" style="margin: auto 2px;"></i></button>
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="js/simulator.js"></script>
+
 </html>
 
 <script>
-
-  
 </script>
