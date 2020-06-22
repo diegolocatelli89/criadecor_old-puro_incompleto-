@@ -46,7 +46,7 @@ loadAll = function(){
 createRowRoom = function(playcanvasId, pathThumb){
 
     var html = '    <div class="item-room"> ';
-        html += '    	<a href="simulator.php?Id='+ playcanvasId +'" +  class="link-room"> ';
+        html += '    	<a href="simulator.html?Id='+ playcanvasId +'" +  class="link-room"> ';
         html += '    		<div class="detail-room"> ';	  					  
         //html += '    			<img src="'+ pathThumb +'"> ';
         html += '    			<img src="../assets/images/thumb-test-mobile.jpg"> ';
